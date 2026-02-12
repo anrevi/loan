@@ -1,0 +1,14 @@
+# robots.txt for Indian Home Loan Calculator
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://yourusername.github.io/indian-home-loan-calculator/sitemap.xml
+
+# Crawl delay (optional)
+Crawl-delay: 1
+
+# Disallow admin or private routes (if any)
+# Disallow: /admin/
+# Disallow: /private/
