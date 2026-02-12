@@ -1,15 +1,15 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/indian-home-loan-calculator/', // Change this to your repo name
+  base: '/indian-home-loan-calculator/',
+
   build: {
     outDir: 'dist',
     assetsDir: 'assets',
     sourcemap: false,
-    minify: 'terser',
+    minify: 'esbuild', // faster & default
     rollupOptions: {
       output: {
         manualChunks: {
@@ -21,6 +21,7 @@ export default defineConfig({
       }
     }
   },
+
   server: {
     port: 3000,
     open: true
